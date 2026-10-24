@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="hP56b6" name="ScreenRecorder" projectType="guiapp" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1">
+  <MAINGROUP id="ctMEtE" name="ScreenRecorder">
+    <GROUP id="{52C99DCC-0B27-13F4-8C6A-9759AFD82E7D}" name="Source">
+      <FILE id="R8zgYd" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+      <FILE id="Ddb00j" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>
+      <FILE id="cGHuuD" name="MainComponent.cpp" compile="1" resource="0"
+            file="Source/MainComponent.cpp"/>
+      <FILE id="dsStH1" name="DurationStepper.h" compile="0" resource="0" file="Source/DurationStepper.h"/>
+      <FILE id="dsStC2" name="DurationStepper.cpp" compile="1" resource="0" file="Source/DurationStepper.cpp"/>
+      <GROUP id="{6F1A2B3C-4D5E-4F60-8172-93A4B5C6D7E8}" name="Recorder">
+        <FILE id="rcCmH1" name="RecorderCommon.h" compile="0" resource="0" file="Source/Recorder/RecorderCommon.h"/>
+        <FILE id="rcSrH2" name="ScreenRecorder.h" compile="0" resource="0" file="Source/Recorder/ScreenRecorder.h"/>
+        <FILE id="rcSrC3" name="ScreenRecorder.cpp" compile="1" resource="0" file="Source/Recorder/ScreenRecorder.cpp"/>
+        <FILE id="rcDdH4" name="DesktopDuplicator.h" compile="0" resource="0" file="Source/Recorder/DesktopDuplicator.h"/>
+        <FILE id="rcDdC5" name="DesktopDuplicator.cpp" compile="1" resource="0" file="Source/Recorder/DesktopDuplicator.cpp"/>
+        <FILE id="rcNpH6" name="NV12SamplePool.h" compile="0" resource="0" file="Source/Recorder/NV12SamplePool.h"/>
+        <FILE id="rcNpC7" name="NV12SamplePool.cpp" compile="1" resource="0" file="Source/Recorder/NV12SamplePool.cpp"/>
+        <FILE id="rcLcH8" name="LoopbackCapture.h" compile="0" resource="0" file="Source/Recorder/LoopbackCapture.h"/>
+        <FILE id="rcLcC9" name="LoopbackCapture.cpp" compile="1" resource="0" file="Source/Recorder/LoopbackCapture.cpp"/>
+        <FILE id="rcMwHa" name="Mp4Writer.h" compile="0" resource="0" file="Source/Recorder/Mp4Writer.h"/>
+        <FILE id="rcMwCb" name="Mp4Writer.cpp" compile="1" resource="0" file="Source/Recorder/Mp4Writer.cpp"/>
+        <FILE id="rcCeHc" name="CaptureExclusion.h" compile="0" resource="0" file="Source/Recorder/CaptureExclusion.h"/>
+        <FILE id="rcCeCd" name="CaptureExclusion.cpp" compile="1" resource="0" file="Source/Recorder/CaptureExclusion.cpp"/>
+      </GROUP>
+    </GROUP>
+    <GROUP id="{8A3C5E71-2B4D-4F6A-9C1E-7D2F3A4B5C6E}" name="Resources">
+      <FILE id="icBig1" name="Icon_1024.png" compile="0" resource="0" file="Resources/Icon_1024.png"/>
+      <FILE id="icSml1" name="Icon_64.png" compile="0" resource="0" file="Resources/Icon_64.png"/>
+    </GROUP>
+  </MAINGROUP>
+  <MODULES>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1"/>
+  <EXPORTFORMATS>
+    <VS2022 targetFolder="Builds/VisualStudio2022" extraCompilerFlags="/utf-8"
+            bigIcon="icBig1" smallIcon="icSml1">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="ScreenRecorder"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="ScreenRecorder" useRuntimeLibDLL="0"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="C:/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="C:/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="C:/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="C:/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="C:/JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2022>
+  </EXPORTFORMATS>
+</JUCERPROJECT>

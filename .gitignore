@@ -1,0 +1,14 @@
+# Visual Studio
+.vs/
+*.vcxproj.user
+Builds/**/x64/
+Builds/**/Win32/
+Builds/**/Debug/
+Builds/**/Release/
+
+# Python
+__pycache__/
+
+# OS
+Thumbs.db
+desktop.ini
